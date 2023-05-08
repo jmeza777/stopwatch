@@ -1,15 +1,16 @@
 body {
     height: 100vh;
-    background: url(./assets/track-and-field-1867053__340.jpg) no-repeat center center/cover;
+    /* background: url(./assets/track-and-field-1867053__340.jpg) no-repeat center center/cover; */
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to right, #00ff6298, #007bff84);
 }
 
 .container {
     width: 50%;
     height: 240px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 0 3px;
 }
