@@ -70,3 +70,32 @@ resetBtn.addEventListener('click', function(){
 
     document.getElementById('timer').innerHTML = "00:00:00";
 })
+
+// Variables to store split times
+let splitTimes = [];
+
+
+const splitButton = document.getElementById('splitBtn');
+const splitTimesElement = document.getElementById('splitTimes');
+
+// Event listener for split button
+splitButton.addEventListener('click', () => {
+  if (timerStatus === 'started') {
+    const splitTime = document.getElementById('timer').innerText;
+    splitTimes.push(splitTime);
+
+    // Create a new list item and append it to the split times list
+    const splitItem = document.createElement('li');
+    splitItem.innerText = splitTime;
+    splitTimesElement.appendChild(splitItem);
+  }
+});
+
+
+const clearButton = document.getElementById('clearBtn');
+
+// Event listener for clear button
+clearButton.addEventListener('click', () => {
+  splitTimes = []; // Clear the split times array
+  splitTimesElement.innerHTML = ''; // Clear the split times list
+});

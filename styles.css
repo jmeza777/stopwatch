@@ -51,6 +51,20 @@ button i {
     width: 50px;
 }
 
+button span {
+    font-size: 2rem;
+    padding: 10px;
+    color: white;
+    width: 50px;
+}
+
+#splitTimes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 70px;
+}
+
 #play {
     background-color: green;
 }
@@ -61,4 +75,12 @@ button i {
 
 #reset {
     background-color: red;
+}
+
+#split {
+    background-color: blue;
+}
+
+#clear {
+    background-color: purple;
 }
