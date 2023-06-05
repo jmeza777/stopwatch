@@ -84,3 +84,13 @@ button span {
 #clear {
     background-color: purple;
 }
+
+.split-block {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 80px;
+    box-shadow: 0 0 3px;
+    font-size: 30px;
+}
